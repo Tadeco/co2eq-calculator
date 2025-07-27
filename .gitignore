@@ -33,6 +33,5 @@ Thumbs.db
 dist/
 build/
 
-# LinkedIn credentials (security)
-# Remover quando configurar credenciais reais
-config/credentials.js
+# Configuration files
+config/

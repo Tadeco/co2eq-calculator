@@ -27,19 +27,6 @@ body {
     position: relative;
 }
 
-.user-controls {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.btn-logout {
-    background: linear-gradient(45deg, #95a5a6, #7f8c8d);
-    color: white;
-    padding: 8px 16px;
-    font-size: 0.9em;
-}
 
 .logo-section {
     margin-bottom: 20px;
