@@ -1,0 +1,30 @@
+{
+  "name": "co2eq-calculator",
+  "version": "1.0.0",
+  "description": "🌱 Carbon footprint calculator with LinkedIn authentication",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site ready'",
+    "preview": "live-server --port=3000"
+  },
+  "keywords": [
+    "carbon-footprint",
+    "co2",
+    "calculator",
+    "environment",
+    "linkedin-auth",
+    "sustainability"
+  ],
+  "author": "Tadeco",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tadeco/co2eq-calculator.git"
+  },
+  "homepage": "https://co2eq-calculator.vercel.app",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
