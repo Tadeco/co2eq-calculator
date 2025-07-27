@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Emissões CO2e - Resíduos</title>
+    <title>Calculadora de Emissoes CO2e - Residuos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,18 +14,18 @@
                     <div class="logo-placeholder" id="logoPlaceholder">
                         <div class="upload-icon">🏢</div>
                         <p>Clique para adicionar logo da empresa</p>
-                        <small>PNG, JPG ou SVG - Máx. 2MB</small>
+                        <small>PNG, JPG ou SVG - Max. 2MB</small>
                     </div>
                     <img id="companyLogo" style="display: none; max-width: 200px; max-height: 80px; object-fit: contain;">
                     <input type="file" id="logoInput" accept="image/*" style="display: none;">
                 </div>
             </div>
-            <h1>🌱 Calculadora de Emissões CO2e</h1>
-            <p>Converta seus resíduos em equivalente de CO2 para cálculo da pegada de carbono</p>
+            <h1>🌱 Calculadora de Emissoes CO2e</h1>
+            <p>Converta seus residuos em equivalente de CO2 para calculo da pegada de carbono</p>
         </div>
 
         <div class="calculator-section">
-            <h2 class="section-title">🏢 Informações da Empresa</h2>
+            <h2 class="section-title">🏢 Informacoes da Empresa</h2>
             
             <div class="company-inputs">
                 <div class="form-group">
@@ -34,39 +34,39 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="reportPeriod">Período do Relatório</label>
+                    <label for="reportPeriod">Periodo do Relatorio</label>
                     <input type="text" id="reportPeriod" placeholder="Ex: Janeiro 2024" value="">
                 </div>
                 
                 <div class="form-group">
-                    <label for="responsiblePerson">Responsável</label>
-                    <input type="text" id="responsiblePerson" placeholder="Nome do responsável">
+                    <label for="responsiblePerson">Responsavel</label>
+                    <input type="text" id="responsiblePerson" placeholder="Nome do responsavel">
                 </div>
                 
                 <div class="form-group">
-                    <label for="reportDate">Data do Relatório</label>
+                    <label for="reportDate">Data do Relatorio</label>
                     <input type="date" id="reportDate">
                 </div>
             </div>
         </div>
 
         <div class="calculator-section">
-            <h2 class="section-title">📊 Adicionar Resíduo</h2>
+            <h2 class="section-title">📊 Adicionar Residuo</h2>
             
             <div class="input-group">
                 <div class="form-group">
-                    <label for="wasteType">Tipo de Resíduo</label>
+                    <label for="wasteType">Tipo de Residuo</label>
                     <select id="wasteType">
                         <option value="">Selecione o tipo</option>
-                        <option value="papel">Papel/Papelão</option>
-                        <option value="plastico">Plástico</option>
+                        <option value="papel">Papel/Papelao</option>
+                        <option value="plastico">Plastico</option>
                         <option value="vidro">Vidro</option>
-                        <option value="metal">Metal/Alumínio</option>
-                        <option value="organico">Resíduo Orgânico</option>
-                        <option value="eletronico">Resíduo Eletrônico</option>
-                        <option value="textil">Têxtil</option>
+                        <option value="metal">Metal/Aluminio</option>
+                        <option value="organico">Residuo Organico</option>
+                        <option value="eletronico">Residuo Eletronico</option>
+                        <option value="textil">Textil</option>
                         <option value="madeira">Madeira</option>
-                        <option value="oleo">Óleo de Cozinha</option>
+                        <option value="oleo">Oleo de Cozinha</option>
                         <option value="bateria">Baterias</option>
                     </select>
                 </div>
@@ -97,77 +97,27 @@
             
             <div id="resultsContainer">
                 <div class="empty-state">
-                    <p>Nenhum resíduo adicionado ainda. Adicione um resíduo acima para começar o cálculo.</p>
+                    <p>Nenhum residuo adicionado ainda. Adicione um residuo acima para comecar o calculo.</p>
                 </div>
             </div>
         </div>
 
         <div class="factor-info">
-            <h4>💡 Sobre os Fatores de Emissão</h4>
-            <p>Os fatores de emissão utilizados são baseados em estudos científicos e representam a quantidade de CO2 equivalente emitida por unidade de resíduo, considerando todo o ciclo de vida desde a produção até o descarte inadequado.</p>
-        </div>
-
-        <div class="calculator-section">
-            <h2 class="section-title">📚 Referências Bibliográficas</h2>
-            
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; font-size: 0.9em; line-height: 1.6;">
-                <p><strong>⚠️ AVISO IMPORTANTE:</strong> Os fatores de emissão apresentados nesta calculadora são valores aproximados para fins demonstrativos. Para aplicações oficiais ou estudos científicos, recomenda-se utilizar fatores específicos validados para sua região e contexto.</p>
-                
-                <h4 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50;">Principais Fontes Recomendadas:</h4>
-                
-                <div style="margin-bottom: 15px;">
-                    <strong>• IPCC Guidelines (2019):</strong><br>
-                    IPCC. "2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 5: Waste." Intergovernmental Panel on Climate Change.
-                </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <strong>• EPA (Environmental Protection Agency):</strong><br>
-                    US EPA. "Waste Reduction Model (WARM) - Documentation for Greenhouse Gas Emission Factors." Office of Resource Conservation and Recovery, 2020.
-                </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <strong>• European Environment Agency:</strong><br>
-                    EEA. "EMEP/EEA Air Pollutant Emission Inventory Guidebook 2019 - Waste." European Environment Agency, Copenhagen, 2019.
-                </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <strong>• Brasil - MCTI:</strong><br>
-                    Brasil. "Terceira Comunicação Nacional do Brasil à Convenção-Quadro das Nações Unidas sobre Mudança do Clima." Ministério da Ciência, Tecnologia e Inovação, 2016.
-                </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <strong>• DEFRA (UK):</strong><br>
-                    DEFRA. "UK Government GHG Conversion Factors for Company Reporting: Methodology Paper for Emission Factors." Department for Environment, Food and Rural Affairs, 2023.
-                </div>
-                
-                <h4 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50;">Observações Metodológicas:</h4>
-                
-                <ul style="padding-left: 20px;">
-                    <li><strong>Papel/Papelão:</strong> Considera reciclagem vs. aterro sanitário</li>
-                    <li><strong>Plásticos:</strong> Varia significativamente por tipo de polímero</li>
-                    <li><strong>Resíduos Eletrônicos:</strong> Inclui metais raros e processos de extração</li>
-                    <li><strong>Resíduos Orgânicos:</strong> Considera emissões de metano em aterros</li>
-                    <li><strong>Óleo de Cozinha:</strong> Baseado em descarte inadequado vs. reciclagem</li>
-                </ul>
-                
-                <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 15px; margin-top: 20px;">
-                    <strong>📋 Recomendação para Uso Profissional:</strong><br>
-                    Para relatórios oficiais de inventário de GEE, consulte as diretrizes específicas do seu país e utilize fatores de emissão validados por instituições reconhecidas como IPCC, EPA, ou órgãos ambientais nacionais.
-                </div>
-            </div>
+            <h4>💡 Sobre os Fatores de Emissao</h4>
+            <p>Os fatores de emissao utilizados sao baseados em estudos cientificos e representam a quantidade de CO2 equivalente emitida por unidade de residuo, considerando todo o ciclo de vida desde a producao ate o descarte inadequado.</p>
         </div>
     </div>
 
-    <!-- Botão WhatsApp Flutuante -->
+    <!-- Botao WhatsApp Flutuante -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/5521964462281?text=Oi%2C%20vi%20o%20seu%20site%2C%20gostaria%20de%20sugerir%20uma%20atualiza%C3%A7%C3%A3o." 
+        <a href="https://wa.me/5521964462281?text=Oi%2C%20vi%20o%20seu%20site%2C%20gostaria%20de%20sugerir%20uma%20atualizacao." 
            target="_blank" 
            class="whatsapp-button"
            title="Fale conosco no WhatsApp">
             <svg class="whatsapp-icon" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
             </svg>
-            <span class="whatsapp-text">Sugerir Atualização</span>
+            <span class="whatsapp-text">Sugerir Atualizacao</span>
         </a>
     </div>
 
