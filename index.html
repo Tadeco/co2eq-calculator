@@ -77,29 +77,6 @@
             box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);
         }
 
-        .test-btn {
-            background: #28a745;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .test-btn:hover {
-            background: #218838;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
-        }
 
         .linkedin-icon {
             width: 24px;
@@ -174,9 +151,6 @@
                 Entrar com LinkedIn
             </a>
             
-            <button onclick="simulateLogin()" class="test-btn">
-                🧪 TESTE SEM LINKEDIN (Dev Mode)
-            </button>
         </div>
 
         <div class="features">
@@ -195,10 +169,10 @@
         </div>
     </div>
 
-    <script src="script_js.js"></script>
+</script>
     <script>
-        // Configurações do LinkedIn (você precisa substituir pelos seus valores)
-        const LINKEDIN_CLIENT_ID = 'SEU_CLIENT_ID_AQUI';
+        // Configurações do LinkedIn
+        const LINKEDIN_CLIENT_ID = '78zy6m3i8j3iad'; // Substitua pela sua Client ID real
         const REDIRECT_URI = window.location.origin + '/callback.html';
         const STATE = Math.random().toString(36).substring(7);
 
@@ -220,13 +194,30 @@
             window.location.href = authUrl;
         });
 
+        // Função de login simulado para desenvolvimento (desabilitada em produção)
+        function devLogin() {
+            const mockProfile = {
+                id: 'test123',
+                firstName: 'João',
+                lastName: 'Silva',
+                email: 'joao.silva@email.com'
+            };
+            
+            localStorage.setItem('linkedin_access_token', 'test_token_123');
+            localStorage.setItem('user_profile', JSON.stringify(mockProfile));
+            window.location.href = 'calculator.html';
+        }
+
         // Verificar se já está logado
         document.addEventListener('DOMContentLoaded', function() {
             const token = localStorage.getItem('linkedin_access_token');
             if (token) {
-                // Verificar se o token ainda é válido
-                verifyToken(token);
+                // Se já tem token, ir direto para calculadora
+                window.location.href = 'calculator.html';
             }
+            
+            // MODO DESENVOLVIMENTO: descomente a linha abaixo para login automático
+            // devLogin();
         });
 
         function verifyToken(token) {
