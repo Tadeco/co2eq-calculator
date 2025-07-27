@@ -14,6 +14,7 @@ Uma ferramenta web gratuita para calcular emissões de CO2 equivalente a partir 
 - ✅ **Geração de relatórios** profissionais em PDF
 - ✅ **Interface responsiva** para desktop e mobile
 - ✅ **Referências bibliográficas** completas
+- ✅ **Contato WhatsApp** para sugestões e atualizações
 
 ## 🗂️ Como Usar
 
@@ -133,11 +134,15 @@ CO2eq/
 **Modificar Fatores de Emissão:**
 - Edite os valores no objeto `emissionFactors` em `script-simple.js`
 
-## 📞 Suporte
+## 📞 Suporte e Contato
 
+- **WhatsApp**: Botão flutuante no site para sugestões
 - **GitHub**: https://github.com/Tadeco/co2eq-calculator
 - **Site**: https://co2eq-calculator.vercel.app
 - **Issues**: https://github.com/Tadeco/co2eq-calculator/issues
+
+### 💬 Sugerir Atualizações
+Use o botão WhatsApp no canto inferior esquerdo do site para enviar sugestões diretamente!
 
 ## 📄 Licença
 
